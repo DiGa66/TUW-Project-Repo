@@ -3,7 +3,7 @@ function guess_more {
   read num
 }
 
-num_of_files=$(ls -p | grep -v / | wc -l)
+num_of_files=$(ls -l | grep '^-' | wc -l)
 
 OK=0
 
